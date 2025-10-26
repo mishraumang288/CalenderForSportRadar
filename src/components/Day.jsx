@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 export default function Day({ day, rowIdx }) {
   function getCurrentDayClass() {
     return day.format("DD-MM-YY") === dayjs().format("DD-MM-YY")
-      ? "today-badge"
+      ? "bg-blue-600 text-white rounded-full w-7"
       : "";
   }
   return (

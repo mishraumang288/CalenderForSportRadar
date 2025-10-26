@@ -3,10 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily:{
-        sans: ["Open Sans"]
+      fontFamily: {
+        sans: ["Open Sans", "sans-serif"]
       },
-      gridTemplateCOlumns: {
+      gridTemplateColumns: { // fixed name
         "1/5": "1fr 5fr"
       }
     },

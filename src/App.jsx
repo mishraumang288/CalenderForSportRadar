@@ -1,24 +1,27 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import "./App.css";
 import { getMonth } from "./util";
 import CalenderNav from "./components/CalenderNav";
 import Sidebar from "./components/Sidebar";
 import Month from "./components/Month";
+import GlobalContext from "./context/GlobalContext";
 
 function App() {
-  console.table(getMonth());
-const [currentMonth, setCurrentMonth] = useState(getMonth())
+  
+  const [currentMonth, setCurrentMonth] = useState(getMonth());
+  const { monthIndex } = useContext(GlobalContext);
+  useEffect(() => {
+    setCurrentMonth(getMonth(monthIndex));
+  }, [monthIndex]);
 
   return (
-    <>
-      <div className="h-screen flex flex-col">
-        <CalenderNav />
-        <div className="flex flex-1">
-          <Sidebar />
-          <Month month={currentMonth} />
-        </div>
+    <div className="h-screen flex flex-col">
+      <CalenderNav />
+      <div className="flex flex-1">
+        <Sidebar />
+        <Month month={currentMonth} />
       </div>
-    </>
+    </div>
   );
 }
 
