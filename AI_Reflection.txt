@@ -1,0 +1,80 @@
+# AI Usage Reflection
+
+## Components I Wrote Myself
+
+1. **Calendar Core Structure**
+   - Basic monthly calendar grid layout
+   - Day component structure
+   - Event creation form fields
+   - Calendar navigation
+
+2. **Event Management**
+   - Event creation and editing logic
+   - Color label selection
+   - Date and time handling
+   - Sports and teams selection dropdowns
+
+3. **Data Management**
+   - Context setup for global state
+   - Event storage and retrieval
+   - Event filtering logic
+
+## AI-Assisted Components
+
+1. **UI Enhancements**
+   - Animations and transitions were suggested by GitHub Copilot
+   - Some Tailwind CSS class combinations for styling
+   - Sidebar component structure was improved with AI suggestions
+
+2. **Event Detail View**
+   - Basic structure was mine, but AI helped with:
+   - Layout optimization
+   - Responsive design classes
+   - Error handling patterns
+
+3. **Code Optimization**
+   - Some performance improvements in event filtering
+   - Date formatting patterns
+   - Error handling patterns
+
+## How I Evaluated AI Suggestions
+
+1. **UI/UX Suggestions**
+   - Tested all animations for smoothness
+   - Verified responsive behavior across screen sizes
+   - Ensured accessibility wasn't compromised
+
+2. **Code Suggestions**
+   - Reviewed and understood each suggestion
+   - Tested edge cases (empty events, invalid dates)
+   - Modified suggestions to match project needs
+
+## Technical Decisions
+
+1. **Why React + Vite**
+   - Familiar with React ecosystem
+   - Vite offers faster development experience
+   - Good community support
+
+2. **Why Tailwind CSS**
+   - Rapid prototyping capabilities
+   - Consistent design system
+   - Easy to maintain
+
+3. **Data Management**
+   - Chose Context API over Redux for simplicity
+   - Local storage for persistence
+   - DayJS for better date handling
+
+## Future Improvement
+
+If I had more time, I would implement:
+
+**Advanced Event Filtering**
+- Filter events by multiple sports
+- Date range filtering
+- Search by team names
+- Save filter preferences
+- Export filtered events
+
+This would make the calendar more useful for users following multiple sports or teams.
